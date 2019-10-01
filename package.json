@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "storybook:build": "build-storybook"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
