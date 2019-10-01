@@ -1,0 +1,40 @@
+import { Meta, Preview, Story } from '@storybook/addon-docs/blocks';
+import { EditProvider, ThemeControls } from '@styled-system/edit';
+import { Button } from './Button';
+
+<Meta title='Button' component={Button} />
+
+# Button
+
+## Basic
+
+<Story name="basic">
+  <Button>Hello, World!</Button>
+</Story>
+
+## Submit
+
+<Story name="submit">
+  <Button type="submit">Submit</Button>
+</Story>
+
+## With Icon Before
+
+<Story name="with icon before">
+  <Button iconBefore='save'>Save</Button>
+</Story>
+
+## With Icon After
+
+<Story name="with icon after">
+  <Button iconAfter='chevron'>Continue</Button>
+</Story>
+
+## In editor
+
+<Story name="in theme editor">
+  <EditProvider>
+    <Button>Editable</Button>
+    <ThemeControls />
+  </EditProvider>
+</Story>
