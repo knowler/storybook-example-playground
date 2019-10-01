@@ -4,6 +4,7 @@ import { jsx } from 'theme-ui';
 export const Button = ({ children, iconBefore, iconAfter, ...props }) => (
   <button
     sx={{
+      alignItems: 'center',
       bg: 'green',
       border: 0,
       borderRadius: '0.125rem',
@@ -12,10 +13,14 @@ export const Button = ({ children, iconBefore, iconAfter, ...props }) => (
       fontFamily: 'sans',
       fontWeight: 600,
       fontSize: 1,
-      alignItems: 'center',
       lineHeight: 1,
       px: 3,
       py: 2,
+      transition: '0.3s ease',
+      ':hover': {
+        bg: 'blue',
+        color: 'green',
+      },
     }}
     {...props}
   >
